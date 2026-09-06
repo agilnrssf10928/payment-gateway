@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "payment-gateway-qris",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "GITHUB_TOKEN": "@github-token",
+    "GITHUB_OWNER": "agilnrssf10928",
+    "GITHUB_REPO": "PAYMENT-",
+    "GITHUB_FILE_PATH": "database.json",
+    "GITHUB_BRANCH": "main"
+  },
+  "regions": ["sin1"],
+  "framework": "nextjs"
+}
